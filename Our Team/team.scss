@@ -1,0 +1,113 @@
+body{
+    background-color: #f1f1f1;      ;
+}
+.infowrapper{
+    width:100%;
+    height:1200px;
+    display:flex;
+    flex-direction:column;
+}
+.firstrow {
+    display:flex;
+    justify-content:space-around;
+}
+.secondrow{
+    display:flex;
+    justify-content: space-around;
+}
+.info{
+    height:500px;
+    border-radius:30px;
+    width:350px;
+    overflow: hidden;
+    border:5px solid grey;
+}
+.image{
+    height:85%;
+    &:hover{
+        background-size: 110%;
+    }
+}
+.image1{
+    background: url("../Pics/20211126_145524.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    &:hover{
+        background-size: 170%;
+    }
+}
+.image2{
+    background: url("../Pics/1638453092167.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.image3{
+    background: url("../Pics/image1\ \(3\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -150px;
+    &:hover{
+        background-size: 160%;
+    }
+}
+.image4{
+    background: url("../Pics/IMG_20211202_175759.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image5{
+    background: url("../Pics//received_4898290696900278.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.image6{
+    background: url("../Pics/Snapchat-1850451163.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.text > a > img{
+    height:50px;
+    margin-top: 15px;
+    width:50px;
+}
+.text>p{
+    font-size: 20px;
+    font-weight: bold;
+    padding:5px 10px 5px 10px;
+    border-radius: 10px;
+    color:white;
+    margin-top: 8px;
+    background-color:#0089a6;
+}
+
+@media(max-width:1100px){
+    .infowrapper{
+        height:auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .firstrow {
+        flex-direction: column;
+    }
+    .secondrow{
+        flex-direction: column;
+        margin-top:-40px;
+    }
+    .info{
+       margin-top:10px;
+       width:300px;
+       height:450px;
+    }
+    .text > a > img{
+        margin-top:5px;
+    }
+}

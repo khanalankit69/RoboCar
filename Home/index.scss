@@ -1,0 +1,164 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    max-width: 1920px;
+}
+nav{
+    height:60px;
+    width:100%;
+    background-color: #24252a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        margin-left:15px;
+        text-decoration: none;
+        list-style-type: none;
+        outline:none;
+        border: none;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        padding:5px 20px 5px 20px;
+        border-radius: 20px;
+        border: none;
+        font-size: 19px;
+        outline:none;
+        transition: 0.3s;
+        &:hover{
+            background-color:#0089a6;
+        }
+    }
+    
+}
+.homeimgwrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeimg{
+    width:1500px;
+    height:800px;
+    background: url("../Images/homecar.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.future{
+    font-family: monospace;
+    font-size: 3rem;
+}
+.slog{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size:1.6rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 1.7rem;
+        width:60%;
+    }
+}
+.infocar{
+    height:750px;
+    margin:15px;
+    width:98%;
+    border-radius: 50px;
+    border:3px solid #0089a6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .txtimgwrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgarduino{
+        width:63%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .txtarduino{
+        height:100%;
+        width:37%;
+        margin:10px;
+        text-align:justify;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .btnwrapper {
+        margin-top:30px;
+        button{
+            height:70px;
+            width:240px;
+            font-size: 25px;
+            background: #0089a6;
+            color:white;
+            transition: 0.3s;
+            border:2px solid white;
+            border-radius:10px;
+            &:hover{
+                background: white;
+                color:#0089a6;
+                border:2px solid #0089a6;
+            }
+        }
+    }
+}
+@media(max-width:1670px){
+    .infocar{
+        height:1000px;
+        .txtarduino{
+            width:80%;
+        }        
+    }
+    .slog p{
+        width:80%;
+        text-align: justify;
+    }
+    .txtimgwrapper{
+        flex-direction: column;
+        width:80%;  
+    }
+    .imgarduino img{
+        height:400px;
+        width:700px;
+    }
+}
+@media(max-width:768px){
+    .homeimg{
+        height:230px;
+    }
+    .infocar{
+        height:780px;
+        width:94%;
+        .txtarduino{
+        width:90%;
+        font-size: 1.3rem;
+        }        
+    }
+    .slog p{
+        font-size: 1.3rem;
+    }
+    .imgarduino img{
+        height:230px;
+        width:350px;
+    }
+    .future{
+        margin-left:10px;
+        font-size: 2.1rem;;
+    }
+}
