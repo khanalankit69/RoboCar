@@ -218,7 +218,7 @@ nav a:hover {
     height: 230px;
   }
   .infocar {
-    height: 780px;
+    height: 760px;
     width: 94%;
   }
   .infocar .txtarduino {
@@ -229,8 +229,8 @@ nav a:hover {
     font-size: 1.3rem;
   }
   .imgarduino img {
-    height: 230px;
-    width: 350px;
+    height: 210px;
+    width: 300px;
   }
   .future {
     margin-left: 10px;
